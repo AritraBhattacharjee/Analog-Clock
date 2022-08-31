@@ -32,7 +32,7 @@ body{
 }
 
 
-.clock .number{
+.number{
     --rotation:0
     position: absolute;
     width: 100%;
@@ -41,9 +41,9 @@ body{
     transform: rotate(var(--rotation));
 
 }
-.clock .number1{ --rotation: 30deg;
+.number1{ --rotation: 30deg;
 position: absolute;}
-.clock .number2{ --rotation: 60deg;
+.number2{ --rotation: 60deg;
 position: absolute;}
 .clock .number3{ --rotation: 90deg;
 position: absolute;}
@@ -99,7 +99,7 @@ position: absolute;}
     height: 43%;
     background-color: black;
     position: absolute;
-    top: 8%;
+    top: 7%;
 
 }
 .clock .hour{
@@ -107,15 +107,41 @@ position: absolute;}
     height: 30%;
     background-color: black;
     position: absolute;
-    top: 19%;
+    top: 20%;
 
 }
 
-body h1{
-    position:absolute;
-}
+
 #heading{
     position: absolute;
     top: 5%;
     font-size: 45px;
+}
+
+
+/*Making a digital clock*/
+.digital{
+    position: absolute;
+    bottom: 15%;
+}
+.toggle{
+    position: absolute;
+    bottom: 25%;
+}
+.toggle button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10%;
+
+
+}
+
+#digital{
+    position: fixed;
+    top: 35%;
+    left:18%;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200px;
+    color: white;
 }
